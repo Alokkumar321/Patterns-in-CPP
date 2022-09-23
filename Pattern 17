@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<" Enter a Digit : ";
+    cin>>n;
+    
+    int row = n;
+    while(row >= 1)
+    {
+        int col = row;
+        while(col > 0)
+        {
+            cout<<" * ";
+            col = col - 1;
+        }
+        cout<<endl;
+        row = row - 1;
+    }
+}
+
+OUTPUT :-
+
+ Enter a Digit : 10
+ *  *  *  *  *  *  *  *  *  * 
+ *  *  *  *  *  *  *  *  * 
+ *  *  *  *  *  *  *  * 
+ *  *  *  *  *  *  * 
+ *  *  *  *  *  * 
+ *  *  *  *  * 
+ *  *  *  * 
+ *  *  * 
+ *  * 
+ * 
