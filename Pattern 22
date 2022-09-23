@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<" Enter a Digit : ";
+    cin>>n;
+    int row = n;
+    while(row >= 1)
+    {
+        int space = n - row;
+        while(space)
+        {
+            cout<<" ";
+            space = space - 1;
+        }
+        int col = 1;
+        int count = 0;
+        while(col <= row)
+        {
+            cout<<(n-row+1) + count;
+            count = count + 1;
+            col = col + 1;
+        }
+        cout<<endl;
+        row = row - 1;
+    }
+}
+
+OUTPUT :-
+
+ Enter a Digit : 9
+123456789
+ 23456789
+  3456789
+   456789
+    56789
+     6789
+      789
+       89
+        9
