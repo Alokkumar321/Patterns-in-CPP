@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<" Enter a digit : ";
+    cin>>n;
+    int value = 1;
+    int row = 1;
+    while(row<=n)
+    {
+        int col = 1;
+        while(col<=row)
+        {
+            cout<<value;
+            value = value + 1;
+            col = col + 1;
+        }
+        cout<<endl;
+        row = row + 1;
+    }
+}
+
+OUTPUT :-
+
+ Enter a digit : 5
+1
+23
+456
+78910
+1112131415
